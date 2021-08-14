@@ -1,0 +1,11 @@
+version: '3'
+services:
+  tinyfilemanager:
+    container_name: tinyfilemanager
+    build:
+      context: ./docker
+    ports:
+      - 14880:80
+    volumes:
+      - ./docker/config/apache2/sites-enabled:/etc/apache2/sites-enabled
+      - ./:/var/www/html
