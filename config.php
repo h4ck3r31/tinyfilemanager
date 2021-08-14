@@ -46,7 +46,7 @@ $default_timezone = 'Etc/UTC'; // UTC
 
 // Root path for file manager
 // use absolute path of directory i.e: '/var/www/folder' or $_SERVER['DOCUMENT_ROOT'].'/folder'
-$root_path = '/data';
+$root_path = '/var';
 
 // Root url for links in file manager.Relative to $http_host. Variants: '', 'path/to/subfolder'
 // Will not working if $root_path will be outside of server document root
@@ -108,6 +108,10 @@ $ip_ruleset = 'OFF';
 // Should users be notified of their block?
 $ip_silent = true;
 
+$delEnabled = false;
+
+$chmodEnabled = false;
+
 // IP-addresses, both ipv4 and ipv6
 $ip_whitelist = array(
     '127.0.0.1',    // local ipv4
@@ -119,5 +123,6 @@ $ip_blacklist = array(
     '0.0.0.0',      // non-routable meta ipv4
     '::'            // non-routable meta ipv6
 );
+
 
 ?>
